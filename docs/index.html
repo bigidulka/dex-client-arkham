@@ -1,0 +1,29 @@
+        <!doctype html>
+        <html lang="en">
+        <head>
+          <meta charset="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <title>Arkham Reverse Client</title>
+          <style>
+            body { margin:0; font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif; color:#111; background:#f6f7f9; }
+            main { max-width:960px; margin:0 auto; padding:48px 20px; }
+            h1 { font-size:42px; margin:0 0 12px; letter-spacing:0; }
+            .panel { background:white; border:1px solid #dde1e7; border-radius:8px; padding:20px; margin:18px 0; }
+            code, pre { background:#111820; color:#e8f2ff; border-radius:6px; }
+            code { padding:2px 5px; }
+            pre { padding:16px; overflow:auto; }
+            ul { columns:2; padding-left:20px; }
+            a { color:#0756d6; }
+            @media (max-width:720px) { ul { columns:1; } h1 { font-size:32px; } }
+          </style>
+        </head>
+        <body><main>
+          <h1>Arkham Reverse Client</h1>
+          <p>Standalone Python client for browser-backed crypto market endpoints.</p>
+          <div class="panel"><h2>Install</h2><pre>pip install git+https://github.com/bigidulka/dex-client-arkham.git</pre></div>
+          <div class="panel"><h2>Usage</h2><pre>from dex_client_arkham import ArkhamClient
+
+client = ArkhamClient()</pre></div>
+          <div class="panel"><h2>Methods</h2><ul><li><code>tag</code></li><li><code>tag_top</code></li><li><code>tag_count_entities</code></li><li><code>tag_count_addresses</code></li><li><code>tag_params</code></li><li><code>cex_tag</code></li><li><code>cex_top</code></li><li><code>entity</code></li><li><code>entity_summary</code></li><li><code>address</code></li><li><code>entity_balances</code></li><li><code>entity_top_address</code></li><li><code>entity_history</code></li><li><code>entity_loans</code></li><li><code>entity_flow</code></li><li><code>entity_volume</code></li><li><code>entity_portfolio</code></li><li><code>entity_portfolio_time_series</code></li><li><code>entity_for_exchange</code></li><li><code>search</code></li><li><code>search_exchange</code></li><li><code>transfers</code></li><li><code>insights</code></li><li><code>translate_languages</code></li><li><code>translate_dict</code></li><li><code>exchange_tokens</code></li><li><code>user</code></li><li><code>user_alert_methods</code></li><li><code>user_alerts_tier</code></li><li><code>user_announcements</code></li><li><code>user_recent_searches</code></li><li><code>user_saved_filters</code></li><li><code>user_entity_is_not_viewable</code></li><li><code>user_entity_is_shareable</code></li><li><code>auth_login_need_captcha</code></li><li><code>login_with_password</code></li><li><code>login_mfa_challenge</code></li><li><code>google_login_continue</code></li><li><code>apple_login_continue</code></li><li><code>authenticator_app_exists</code></li><li><code>verify_authenticator_app_code</code></li><li><code>create_authenticator_app_secret</code></li><li><code>confirm_authenticator_app_secret</code></li><li><code>delete_authenticator_app_secret</code></li><li><code>request_email_change</code></li><li><code>update_password</code></li><li><code>update_username</code></li><li><code>delete_user</code></li><li><code>account_sessions</code></li><li><code>account_delete_session</code></li><li><code>account_terminate_all_sessions</code></li><li><code>user_email_request_verification</code></li><li><code>user_email_verify</code></li><li><code>user_exchange_auth</code></li><li><code>subscription_info</code></li><li><code>api_keys</code></li><li><code>create_api_key</code></li><li><code>rename_api_key</code></li><li><code>delete_api_key</code></li><li><code>api_usage_alerts</code></li><li><code>update_api_usage_alerts</code></li><li><code>send_test_api_usage_alert</code></li><li><code>ws_session_info</code></li><li><code>ws_sessions</code></li><li><code>create_ws_session</code></li><li><code>delete_ws_session</code></li><li><code>turnkey_wallet</code></li><li><code>create_turnkey_wallet</code></li><li><code>turnkey_session</code></li></ul></div>
+          <div class="panel"><h2>Inventory</h2><p>See <a href="../endpoint_inventory.json">endpoint_inventory.json</a>.</p></div>
+        </main></body></html>

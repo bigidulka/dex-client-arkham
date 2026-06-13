@@ -1,0 +1,157 @@
+{
+  "client": "arkham",
+  "title": "Arkham Reverse Client",
+  "base_url": "https://api.arkm.com",
+  "auth": "X-Payload reverse signature; optional arkham_session cookie; login/MFA helpers",
+  "endpoints": [
+    [
+      "GET",
+      "/search",
+      "search"
+    ],
+    [
+      "GET",
+      "/intelligence/entity/{entity_id}",
+      "entity"
+    ],
+    [
+      "GET",
+      "/intelligence/entity/{entity_id}/summary",
+      "summary"
+    ],
+    [
+      "GET",
+      "/balances/entity/{entity_id}",
+      "balances"
+    ],
+    [
+      "GET",
+      "/intelligence/address/{address}",
+      "address"
+    ],
+    [
+      "GET",
+      "/intelligence/entity/{entity_id}/top-address",
+      "top address"
+    ],
+    [
+      "GET",
+      "/intelligence/entity/{entity_id}/history",
+      "history"
+    ],
+    [
+      "GET",
+      "/intelligence/entity/{entity_id}/loans",
+      "loans"
+    ],
+    [
+      "GET",
+      "/intelligence/entity/{entity_id}/flow",
+      "flow"
+    ],
+    [
+      "GET",
+      "/intelligence/entity/{entity_id}/volume",
+      "volume"
+    ],
+    [
+      "GET",
+      "/portfolio/entity/{entity_id}",
+      "portfolio"
+    ],
+    [
+      "GET",
+      "/portfolio/entity/{entity_id}/time-series",
+      "portfolio time series"
+    ],
+    [
+      "GET",
+      "/transfers",
+      "transfers"
+    ],
+    [
+      "GET",
+      "/tag/{tag}",
+      "tag"
+    ],
+    [
+      "GET",
+      "/tag/{tag}/top",
+      "tag top"
+    ],
+    [
+      "GET",
+      "/tag/{tag}/count/entities",
+      "tag count entities"
+    ],
+    [
+      "GET",
+      "/tag/{tag}/count/addresses",
+      "tag count addresses"
+    ],
+    [
+      "GET",
+      "/tag/{tag}/params",
+      "tag params"
+    ],
+    [
+      "GET",
+      "/cex/top",
+      "cex top"
+    ],
+    [
+      "GET",
+      "/translate/languages",
+      "languages"
+    ],
+    [
+      "GET",
+      "/translate/dict",
+      "dict"
+    ],
+    [
+      "GET",
+      "/token/arkham_exchange_tokens",
+      "exchange tokens"
+    ],
+    [
+      "GET",
+      "/auth/login/need-captcha",
+      "need captcha"
+    ],
+    [
+      "POST",
+      "/auth/login",
+      "login"
+    ],
+    [
+      "POST",
+      "/auth/mfa/challenge",
+      "mfa challenge"
+    ],
+    [
+      "GET",
+      "/user",
+      "user"
+    ],
+    [
+      "GET",
+      "/user/recent-searches",
+      "recent searches"
+    ],
+    [
+      "GET",
+      "/user/saved-filters",
+      "saved filters"
+    ],
+    [
+      "GET",
+      "/account/sessions",
+      "sessions"
+    ]
+  ],
+  "browser_capture": {
+    "arkham_entity": [],
+    "arkham_tags_cex": []
+  }
+}
