@@ -1,32 +1,37 @@
-        # Arkham Reverse Client
+# Arkham Reverse Client
 
-        Python client for endpoints used by [https://arkm.com](https://arkm.com). The implementation is browser/reverse-engineered and mirrors the internal clients used in local DEX modules.
+Python client for endpoints used by [https://arkm.com](https://arkm.com). The implementation is browser/reverse-engineered and mirrors the internal clients used in local DEX modules.
 
-        ## Install
+## Educational Use
 
-        ```bash
-        pip install git+https://github.com/bigidulka/dex-client-arkham.git
-        ```
+This project is published as part of an educational process for studying web/API clients and data access patterns. It is unofficial, not affiliated with or endorsed by the upstream service, and should be used responsibly according to the target site's terms and applicable law.
 
-        For local development:
 
-        ```bash
-        pip install -e '.[dev]'
-        pytest
-        ```
+## Install
 
-        ## Quick start
+```bash
+pip install git+https://github.com/bigidulka/dex-client-arkham.git
+```
 
-        ```python
-        from dex_client_arkham import ArkhamClient
+For local development:
 
-        client = ArkhamClient()
-        # call any method below; all methods return decoded JSON dict/list payloads
-        ```
+```bash
+pip install -e '.[dev]'
+pytest
+```
 
-        ## Methods
+## Quick start
 
-        - `tag`
+```python
+from dex_client_arkham import ArkhamClient
+
+client = ArkhamClient()
+# call any method below; all methods return decoded JSON dict/list payloads
+```
+
+## Methods
+
+- `tag`
 - `tag_top`
 - `tag_count_entities`
 - `tag_count_addresses`
@@ -96,11 +101,11 @@
 - `create_turnkey_wallet`
 - `turnkey_session`
 
-        ## Endpoint inventory
+## Endpoint inventory
 
-        Extracted from existing Local clients and rechecked with browser-harness network capture where the site allowed capture.
+Extracted from existing Local clients and rechecked with browser-harness network capture where the site allowed capture.
 
-        - `['GET', '/search', 'search']`
+- `['GET', '/search', 'search']`
 - `['GET', '/intelligence/entity/{entity_id}', 'entity']`
 - `['GET', '/intelligence/entity/{entity_id}/summary', 'summary']`
 - `['GET', '/balances/entity/{entity_id}', 'balances']`
@@ -130,11 +135,11 @@
 - `['GET', '/user/saved-filters', 'saved filters']`
 - `['GET', '/account/sessions', 'sessions']`
 
-        Full details: [`endpoint_inventory.json`](endpoint_inventory.json).
+Full details: [`endpoint_inventory.json`](endpoint_inventory.json).
 
-        ## Notes
+## Notes
 
-        - No official SDK is used.
-        - Some endpoints require Cloudflare/browser behavior; pass `use_curl_cffi=True` where available.
-        - Auth/session-only methods need your own cookies/tokens. Do not commit secrets.
-        - These clients are thin transport wrappers; normalize data in your application layer.
+- No official SDK is used.
+- Some endpoints require Cloudflare/browser behavior; pass `use_curl_cffi=True` where available.
+- Auth/session-only methods need your own cookies/tokens. Do not commit secrets.
+- These clients are thin transport wrappers; normalize data in your application layer.
